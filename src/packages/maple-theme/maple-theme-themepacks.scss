@@ -24,9 +24,13 @@ article {
     padding: 24px 36px 96px;
 
     h1 {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 88px;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 64px;
+
+        i {
+            font-size: 72px !important;
+        }
     }
 
     h2 {
