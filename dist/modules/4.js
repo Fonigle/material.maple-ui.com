@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{28:function(t,e,n){"use strict";n.r(e);var i=function(){var t=this.$createElement;return(this._self._c||t)("article")};i._withStripped=!0;var r=n(3),s=Object(r.a)({},i,[],!1,null,null,null);s.options.__file="src/views/articles/button.md";e.default=s.exports}}]);

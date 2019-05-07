@@ -1,0 +1,102 @@
+// $mp-themepacks-custom: (
+//     teal: (
+//         main: #009688,
+//         accent: #ffc400,
+//     ),
+//     deep-purple: (
+//         main: #673ab7,
+//         accent: #f50057,
+//     ),
+//     cyan: (
+//         main: #00bcd4,
+//         accent: #ff3d00,
+//     ),
+// );
+
+$darken-ratio: 2%;
+
+@import '~maple-theme/src/maple-theme.scss';
+@import '~maple-theme/src/maple-theme-mixins.scss';
+
+article {
+    @include mp-theme-color(1);
+    font-size: 16px;
+    padding: 24px 36px 48px;
+
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 88px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 48px;
+        margin: 64px 0 0;
+
+        @at-root .mp-light & {
+            border-bottom: 1px solid rgba(#000, 0.12);
+        }
+
+        @at-root .mp-dark & {
+            border-bottom: 1px solid rgba(#fff, 0.12);
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 28px 0 0;
+
+        &::before {
+            content: '§';
+            padding-right: 8px;
+            @include mp-theme-color(18);
+        }
+    }
+
+    a {
+        @include mp-theme-color(15);
+        @include mp-theme-color-hover(18);
+        cursor: pointer;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    .code-inline {
+        padding: 2px 4px;
+        margin: 0 2px;
+        @include mp-theme-background(32);
+    }
+
+    pre[lang] {
+        &::before {
+            content: attr(lang);
+            display: block;
+            line-height: 16px;
+            font-size: 12px;
+            text-align: right;
+            padding: 0 16px;
+            @include mp-theme-color(3);
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        code {
+            padding: 0 16px 16px !important;
+        }
+
+        @at-root .mp-light & {
+            &::before {
+                background: #fafafa;
+            }
+        }
+
+        @at-root .mp-dark & {
+            &::before {
+                background: #282c34;
+            }
+        }
+    }
+}
