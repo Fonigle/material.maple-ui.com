@@ -8,6 +8,17 @@ const router = new VueRouter({
     routes,
 })
 
+router.afterEach(function (from, to) {
+    const eleApp = document.querySelector('.app-wrapper');
+    if (eleApp) {
+        eleApp.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        })
+    }
+})
+
 Vue.use(VueRouter);
 
 export default router;

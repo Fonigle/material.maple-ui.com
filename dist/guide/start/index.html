@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Maple Material Vue - 源质化设计网页快速成型工具</title>
+        <meta name="keywords" content="maple material vue,material vue,material design,vue component,vue">
+        <meta name="description" content="Maple Material Vue, 一套快速建设源质化设计网页的Vue组件库">
+    <link href="/modules/index.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/modules/guide.css"><script charset="utf-8" src="/modules/guide.js"></script><script charset="utf-8" src="/modules/5.js"></script><script charset="utf-8" src="/modules/6.js"></script></head>
+
+    <body class="mp-light mp-theme-default">
+        <div id="app" class="app vb vb-visible" style="position: relative; overflow: hidden;"><div class="app-wrapper vb-content" style="display: block; overflow: hidden scroll; height: 100%; width: calc(100% + 17px);"><header data-v-d4f5fb22="" class="app-header mp-theme-background-main-deep"><div data-v-d4f5fb22="" class="logo">
+        MAPLE-MATERIAL-VUE
+    </div> <nav data-v-d4f5fb22=""><a data-v-d4f5fb22="" href="/" class="router-link-active">
+            首页
+        </a><a data-v-d4f5fb22="" href="/guide/guide/introduction" class="active">
+            教程
+        </a> <a data-v-d4f5fb22="" target="_blank" rel="noflow" href="https://github.com/Fonigle/maple-material-vue">
+            github <i data-v-d4f5fb22="" class="icon-open-in-new"></i></a></nav></header> <div data-v-c6499d02="" class="guide"><div data-v-c6499d02="" class="sidebar-wrapper"><div data-v-5a4bdf75="" data-v-c6499d02="" class="sidebar-nav mp-theme-border-default-right-solid vb vb-invisible" style="position: relative; overflow: hidden;"><div data-v-5a4bdf75="" class="wrapper vb-content" style="display: block; overflow: hidden scroll; height: 100%; width: calc(100% + 17px);"><div data-v-5a4bdf75="" class="group"><div data-v-5a4bdf75="" class="group-title mp-theme-color-main">基础</div> <div data-v-5a4bdf75="" class="primarys"><div data-v-5a4bdf75="" class="primary"><span data-v-5a4bdf75="" class="primary-link active mp-theme-color-secondary mp-theme-color-hover-primary mp-theme-background-active-highlight-pale">
+                        起步
+                    </span> <!----></div></div></div><div data-v-5a4bdf75="" class="group"><div data-v-5a4bdf75="" class="group-title mp-theme-color-main">组件</div> <div data-v-5a4bdf75="" class="primarys"><div data-v-5a4bdf75="" class="primary"><span data-v-5a4bdf75="" class="primary-link mp-theme-color-secondary mp-theme-color-hover-primary mp-theme-background-active-highlight-pale">
+                        Button / 按钮
+                    </span> <!----></div></div></div></div><div class="vb-dragger" style="position: absolute; height: 0px; top: 0px;"><div class="vb-dragger-styler"></div></div></div></div> <div data-v-c6499d02="" class="content-wrapper mp-theme-background-component mp-theme-shadow-1"><article data-v-c6499d02=""><h1>起步</h1> <p><code class="code-inline">maple-material-vue</code> 是一个基于 Material Design <a href="https://www.material.io/develop/web/">官方组件库</a>封装的 <code class="code-inline">Vue</code> 组件库。</p> <h2>安装</h2> <h3>npm 安装</h3> <p><code class="code-inline">maple-material-vue</code>已经发布到 npm，我们可以使用 npm 来安装它。<br>
+这也是我们推荐的使用方式。</p> <pre lang="bash"><code class="hljs bash">npm i --save maple-material-vue
+</code></pre> <h3>使用<code class="code-inline">&lt;script&gt;</code>引入</h3> <p>直接下载并使用<code class="code-inline">&lt;script&gt;</code>标签引入位于项目 dist 文件夹下的<code class="code-inline">maple-material-vue.js</code>，<code class="code-inline">MapleMaterilVue</code> 会被注册为一个全局变量。</p> <p>不要忘记你也需要引入同一文件夹下的样式表文件 <code class="code-inline">maple-material-vue.css</code>。</p> <h2>Typescript 支持</h2> <p>我们已经添加了 typescript 类型声明文件，因此无需编写任何的声明语句或添加额外依赖即可在基于 typescript 的项目中使用它。</p> <h2>起步</h2> <p><code class="code-inline">maple-material-vue</code>是一个 Vue 插件，我们只需要在引入 Vue 后安装它：</p> <pre lang="javascript"><code class="hljs javascript"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>;
+<span class="hljs-keyword">import</span> MapleMaterialVue <span class="hljs-keyword">from</span> <span class="hljs-string">'maple-material-vue'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'maple-material-vue/dist/maple-material-vue.css'</span>;  <span class="hljs-comment">// 别忘了样式表</span>
+
+Vue.use(MapleMaterialVue);
+</code></pre> <p>而后，就可以使用这些组件了。
+以使用<code class="code-inline">&lt;mdc-button&gt;</code>为例</p> <pre lang="HTML"><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">mdc-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"raised"</span> <span class="hljs-attr">@click</span>=<span class="hljs-string">"handleBtnClick"</span>&gt;</span>CLICK!<span class="hljs-tag">&lt;/<span class="hljs-name">mdc-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        <span class="hljs-attr">methods</span>:{
+            handleBtnClick(){
+                alert(<span class="hljs-number">1</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre> <p>效果如下：
+<div class="example"><button class="mdc-button mdc-button--raised"><span class="mdc-button__label">CLICK!</span></button></div></p></article></div></div></div><div class="vb-dragger" style="position: absolute; height: 189px; top: 0px;"><div class="vb-dragger-styler"></div></div></div>
+    <script type="text/javascript" src="/vendors/manifest.js"></script><script type="text/javascript" src="/modules/index.js"></script>
+
+</body></html>

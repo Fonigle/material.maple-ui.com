@@ -17,6 +17,8 @@ import MapleMaterialVue from 'maple-material-vue';
 Vue.use(MapleMaterialVue);
 import 'maple-material-vue/dist/maple-material-vue.css'
 
+import './components/async';
+
 new Vue({
     el: '#app',
     render: h => h(App),

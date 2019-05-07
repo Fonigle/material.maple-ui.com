@@ -1,8 +1,8 @@
 export default [{
     title: '基础',
     children: [{
-        name: 'introduction',
-        label: '介绍'
+        name: 'start',
+        label: '起步'
     }]
 }, {
     title: '组件',

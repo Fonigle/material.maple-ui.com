@@ -21,7 +21,7 @@ $darken-ratio: 2%;
 article {
     @include mp-theme-color(1);
     font-size: 16px;
-    padding: 24px 36px 48px;
+    padding: 24px 36px 96px;
 
     h1 {
         font-size: 32px;
