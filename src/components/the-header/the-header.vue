@@ -7,23 +7,10 @@
         </div>
 
         <nav>
-            <!-- <a v-for="item of navList"
-               :key="item.name"
-               :class="{active:item.routeName===activePrimaryRouter}"
-               :href="item.href || 'javascript://'"
-               :target="item.href? '_blank':''"
-               :rel="item.href? 'noflow':''"
-               @click="item.routeName && $router.push({name:item.routeName})"
-               v-theme:color="0"
-               v-theme:background.active="35">
-                {{item.name}}
-                <i v-if="item.href"
-                   class="icon-open-in-new"></i>
-            </a> -->
             <router-link v-for="item of navList"
                          :key="item.name"
                          :class="{active:item.routeName===activePrimaryRouter}"
-                         :to="item.to">
+                         :to="{name:item.routeName}">
                 {{item.name}}
             </router-link>
             <a target="_blank"
@@ -53,11 +40,9 @@
         navList = [{
             name: '首页',
             routeName: 'index',
-            to: "/"
         }, {
             name: '教程',
             routeName: 'guide',
-            to: 'guide/introduction'
         }]
 
         get activePrimaryRouter() {
