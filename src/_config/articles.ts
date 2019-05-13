@@ -17,5 +17,9 @@ export default [{
     {
         name: 'icon-button',
         label: 'Icon Button / 图标按钮'
+    },
+    {
+        name: 'checkbox',
+        label: 'Checkbox / 复选框'
     }]
 }]
