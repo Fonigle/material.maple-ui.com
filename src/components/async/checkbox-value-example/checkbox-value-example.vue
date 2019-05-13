@@ -2,7 +2,7 @@
     <div class="checkbox-value-example">
         <div class="group">
             <mdc-checkbox name="group1"
-                          v-model="test1"></mdc-checkbox>
+                          v-model="test1">boolean</mdc-checkbox>
             <div class="bind-value">
                 绑定值：{{test1}}
             </div>

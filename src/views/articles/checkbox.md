@@ -24,7 +24,7 @@
     <div class="checkbox-value-example">
         <div class="group">
             <mdc-checkbox name="group1"
-                          v-model="test1"></mdc-checkbox>
+                          v-model="test1">boolean</mdc-checkbox>
             <div class="bind-value">
                 绑定值：<span v-html="test1"></span>
             </div>
@@ -76,6 +76,7 @@
 ## 禁用
 
 通过设置`disabled`属性来禁用`&lt;mdc-checkbox&gt;`。
+
 ```HTML
 <mdc-checkbox disabled>disabled</mdc-checkbox>
 ```
