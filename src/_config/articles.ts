@@ -10,10 +10,10 @@ export default [{
         name: 'button',
         label: 'Button / 按钮'
     },
-    // {
-    //     name: 'fab',
-    //     label: 'Floating Action Button / 浮动按钮'
-    // },
+    {
+        name: 'fab',
+        label: 'Floating Action Button / 浮动按钮'
+    },
     {
         name: 'icon-button',
         label: 'Icon Button / 图标按钮'
