@@ -4,7 +4,7 @@
 
 ### label / 标签
 
-可以通过两种方式设置`checkbox`的 label
+可以通过两种方式设置`checkbox`的 label。
 
 ```HTML
 <mdc-checkbox label="prop"></mdc-checkbox>

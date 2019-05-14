@@ -21,5 +21,13 @@ export default [{
     {
         name: 'checkbox',
         label: 'Checkbox / 复选框'
+    },
+    {
+        name: 'radio',
+        label: 'Radio / 单选框'
+    },
+    {
+        name: 'toggle',
+        label: 'Toggle / 开关'
     }]
 }]
