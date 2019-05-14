@@ -27,7 +27,7 @@ export default [{
         label: 'Radio / 单选框'
     },
     {
-        name: 'toggle',
-        label: 'Toggle / 开关'
+        name: 'switch',
+        label: 'Switch / 开关'
     }]
 }]
