@@ -49,7 +49,7 @@
 
 ### 字数统计
 
-添加`counter`属性可以在输入框下方右侧展示字数统计。
+添加`counter`属性可以在文本域内右下方展示字数统计。
 
 ```HTML
 <mdc-textarea :maxlength="140" counter :cols="48" :rows="8" placeholder="描述"></mdc-textarea>
