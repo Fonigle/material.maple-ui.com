@@ -29,5 +29,9 @@ export default [{
     {
         name: 'switch',
         label: 'Switch / 开关'
+    },
+    {
+        name: 'input',
+        label: 'Input / 输入框'
     }]
 }]
