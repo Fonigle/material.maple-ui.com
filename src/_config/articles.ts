@@ -33,5 +33,9 @@ export default [{
     {
         name: 'input',
         label: 'Input / 输入框'
+    },
+    {
+        name: 'textarea',
+        label: 'Textarea / 文本域'
     }]
 }]
