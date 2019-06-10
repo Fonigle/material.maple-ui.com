@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-family: Arial, Helvetica, '微软雅黑';
+    }
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before {
+        box-sizing: border-box;
+    }
+
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none !important;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+code {
+    font-size: 15px;
+    font-family: consolas;
+}
