@@ -22,10 +22,10 @@
     },
     "homepage": "https://github.com/Fonigle/material.maple-ui.com#readme",
     "dependencies": {
-        "maple-material-vue": "^0.3.3",
         "vue": "^2.6.10",
         "vue-router": "^3.0.6",
-        "vuebar": "0.0.20"
+        "vuebar": "0.0.20",
+        "maple-material-vue": "^0.4.0"
     },
     "devDependencies": {
         "@babel/core": "^7.4.0",
