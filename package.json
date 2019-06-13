@@ -9,7 +9,8 @@
         "webpack": "cross-env MODE='production' TS_NODE_PROJECT='build/tsconfig.node.json' webpack --config build/webpack/webpack.prod.config.ts --progress --hide-modules --display-entrypoints=false",
         "start": " npm run iconfont && npm run webpack-dev",
         "dist": "npm run iconfont && npm run webpack",
-        "test": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+        "test": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+        "install-p": "cross-env PUPPETEER_DOWNLOAD_HOST=https://storage.googleapis.com.cnpmjs.org npm install puppeteer"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,7 @@
         "vue": "^2.6.10",
         "vue-router": "^3.0.6",
         "vuebar": "0.0.20",
-        "maple-material-vue": "^0.4.0"
+        "maple-material-vue": "^0.5.1"
     },
     "devDependencies": {
         "@babel/core": "^7.4.0",
@@ -61,7 +62,7 @@
         "node-sass": "^4.11.0",
         "optimize-css-assets-webpack-plugin": "^5.0.1",
         "prerender-spa-plugin": "^3.4.0",
-        "puppeteer": "^1.14.0",
+        "puppeteer": "^1.17.0",
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
         "svgtofont": "^1.1.19",

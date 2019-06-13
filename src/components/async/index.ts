@@ -8,3 +8,6 @@ Vue.component('checkbox-value-example', () => import('./checkbox-value-example/c
 Vue.component('radio-value-example', () => import('./radio-value-example/radio-value-example.vue'));
 Vue.component('switch-value-exmaple', () => import('./switch-value-exmaple/switch-value-exmaple.vue'));
 Vue.component('input-vmodel-example', () => import('./input-vmodel-example/input-vmodel-example.vue'));
+Vue.component('list-single-selection-example', () => import('./list-single-selection-example/list-single-selection-example.vue'));
+Vue.component('list-radio-example', () => import('./list-radio-example/list-radio-example.vue'));
+Vue.component('list-checkbox-example', () => import('./list-checkbox-example/list-checkbox-example.vue'));

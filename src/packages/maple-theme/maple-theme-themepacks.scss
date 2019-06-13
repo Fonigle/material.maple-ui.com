@@ -23,7 +23,7 @@ article {
     font-size: 16px;
     padding: 24px 36px 96px;
 
-    h1 {
+    & > h1 {
         font-size: 36px;
         line-height: 48px;
         margin-bottom: 64px;
@@ -33,7 +33,7 @@ article {
         }
     }
 
-    h2 {
+    & > h2 {
         font-size: 28px;
         line-height: 48px;
         margin: 64px 0 0;
@@ -47,7 +47,7 @@ article {
         }
     }
 
-    h3 {
+    & > h3 {
         font-size: 20px;
         line-height: 28px;
         margin: 28px 0 0;

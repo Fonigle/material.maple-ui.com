@@ -37,5 +37,9 @@ export default [{
     {
         name: 'textarea',
         label: 'Textarea / 文本域'
+    },
+    {
+        name: 'list',
+        label: 'List / 列表'
     }]
 }]

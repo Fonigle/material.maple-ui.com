@@ -8,7 +8,7 @@
 
 <mdc-icon-button icon="icon-heart"></mdc-icon-button>
 
-## 切换
+## 切换（`&lt;mdc-icon-button-toggle&gt;`）
 
 对于可切换状态的图标按钮，已经实现双向绑定。  
 点击按钮本身或在外部改变绑定值均可实现按钮状态切换。
